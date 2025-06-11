@@ -1,0 +1,21 @@
+.jokeName {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.3em;
+    color: #22223b;
+}
+
+.jokeRating {
+    font-size: 1.2rem;
+    color: #4a4e69;
+}
+
+.star {
+    color: #bfc0c0;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.star.filled {
+    color: #f9c74f;
+}
