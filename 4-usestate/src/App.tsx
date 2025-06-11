@@ -1,16 +1,18 @@
 
 import './App.css'
-import Count from './components/Count'
-import Events from './components/Events'
-import Intro from './components/Intro'
+import BgChanger from './components/bgChanger/BgChanger'
+// import Count from './components/Count'
+// import Events from './components/Events'
+// import Intro from './components/Intro'
 
 function App() {
 
   return (
     <>
-      <Intro />
+      {/* <Intro />
       <Count />
-      <Events />
+      <Events /> */}
+      <BgChanger />
     </>
   )
 }
