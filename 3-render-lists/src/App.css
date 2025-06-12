@@ -1,5 +1,3 @@
-/* App.css */
-
 body {
   background: #f4f7fa;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -7,20 +5,15 @@ body {
   padding: 0;
 }
 
-.joke {
-  display: flex;
+.jokeContainer{
+margin:  0 auto;
   justify-content: center;
-  margin: 24px 0;
-  /* border: 1px solid #205cc5; */
-}
-
-.jokeContainer {
-  background: #fff;
+   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   padding: 28px 36px;
   max-width: 600px;
   width: 100%;
-  /* border: 2px solid #a5bb38; */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
