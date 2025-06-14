@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       {/* <Intro />
-      <Count />
-      <Events /> */}
+      <Count /> */}
+      {/* <Events /> */}
       <BgChanger />
     </>
   )

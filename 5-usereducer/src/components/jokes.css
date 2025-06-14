@@ -1,0 +1,119 @@
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form input[type="text"] {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form button {
+  padding: 0.5rem 1.2rem;
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form button:hover {
+  background: #005fa3;
+}
+
+.jokes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.joke {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.joke-text {
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0078d4;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addupdate-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.addupdate-buttons button {
+  padding: 0.3rem 0.9rem;
+  border: none;
+  border-radius: 5px;
+  background: #eaeaea;
+  color: #333;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addupdate-buttons button:hover {
+  background: #ffd966;
+  color: #222;
+}
+
+.like-dislike-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.like-dislike-buttons button {
+  padding: 0.3rem 0.9rem;
+  border: none;
+  border-radius: 5px;
+  background: #e3fcef;
+  color: #007a3d;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.like-dislike-buttons button:hover {
+  background: #b7eb8f;
+  color: #005a2b;
+}

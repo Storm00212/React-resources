@@ -1,13 +1,15 @@
 
 import './App.css'
-import Intro from './components/Intro'
+// import Intro from './components/Intro'
+import Jokes from './components/Jokes'
 
 function App() {
 
 
   return (
     <>
-      <Intro />
+      {/* <Intro /> */}
+      <Jokes />
     </>
   )
 }
