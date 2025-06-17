@@ -1,3 +1,4 @@
+import axios from 'axios';
 import './todo.css'
 import React, { useEffect, useState } from "react";
 
@@ -15,26 +16,38 @@ const API_URL = "http://localhost:8081/todos";
 
 const TodoList: React.FC = () => {
     const [todos, setTodos] = useState<Todo[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
+    console.log(todos);
+    // const [loading, setLoading] = useState<boolean>(true);
+
+    const FetchTodos = async () => {
+        try {
+            const response = await axios.get(API_URL);
+            setTodos(response.data.data); 
+        } catch (err) {
+            console.log(err);
+        } 
+    }
 
     useEffect(() => {
-        const fetchTodos = async () => {
-            try {
-                const response = await fetch(API_URL);
-                if (!response.ok) throw new Error("Failed to fetch todos"); //200 status code 
-                const result = await response.json();
-                setTodos(result.data);
-            } catch (err) {
-                console.error("Error fetching todos:", err);
-                alert("Failed to fetch todos. Please try again later.");
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchTodos();
+        // const fetchTodos = async () => {
+        //     try {
+        //         const response = await fetch(API_URL);
+        //         if (!response.ok) throw new Error("Failed to fetch todos"); //200 status code 
+        //         const result = await response.json();
+        //         setTodos(result.data);
+        //     } catch (err) {
+        //         console.error("Error fetching todos:", err);
+        //         alert("Failed to fetch todos. Please try again later.");
+        //     } finally {
+        //         setLoading(false);
+        //     }
+        // };
+        // fetchTodos();
+
+        FetchTodos()
     }, []);
 
-    if (loading) return <div>Loading...</div>;
+    // if (loading) return <div>Loading...</div>;
 
     return (
         <>

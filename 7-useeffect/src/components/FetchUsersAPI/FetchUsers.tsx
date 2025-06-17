@@ -5,6 +5,7 @@ import axios from "axios"
 
 const FetchUsers = () => {
     const [users, setUsers] = useState<TUser[] | null>([])
+    console.log(users);
 
     const FetchUsers = async () => {
         axios.get<TUser[]>('https://jsonplaceholder.typicode.com/users')
