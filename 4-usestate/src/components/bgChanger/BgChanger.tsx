@@ -5,7 +5,6 @@ import Button from "../btn/Button";
 const BgChanger = () => {
     const [bg, setBg] = useState<string>("");
 
-
     const changeBackground = (color: string) => {
         if (color === "Reset") {
             setBg("");
