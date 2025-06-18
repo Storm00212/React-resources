@@ -6,13 +6,14 @@ import Register from './pages/Register'
 import Login from './pages/Login'
 import AboutPage from './pages/AboutPage'
 import Dashboard from './pages/dashboard/Dashboard'
+import Error from './components/error/Error'
 
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <LandingPage />
+      element: <LandingPage />,
     },
     {
       path: '/about',
@@ -43,6 +44,10 @@ function App() {
           element: <h1>Analytics</h1>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <Error />
     }
   ])
 
