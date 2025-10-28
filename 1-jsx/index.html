@@ -1,13 +1,38 @@
+<!-- index.html - JSX Project Single Page Application Foundation
+
+This HTML file serves as the container for our JSX demonstration application.
+The page itself is minimal since React handles all the dynamic content rendering
+through JSX. This showcases how modern React apps work as Single Page Applications.
+
+DOCTYPE declaration for HTML5 standard -->
 <!doctype html>
+
+<!-- HTML element with language attribute for accessibility -->
 <html lang="en">
   <head>
+    <!-- Character encoding for proper text rendering -->
     <meta charset="UTF-8" />
+
+    <!-- Favicon for browser tab identification -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Responsive viewport settings for mobile compatibility -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title - appears in browser tab -->
     <title>Vite + React + TS</title>
   </head>
+
   <body>
+    <!-- Root div where React will mount our JSX application -->
+    <!-- This empty div will be replaced by our React component tree -->
+    <!-- The id="root" is referenced in main.tsx -->
     <div id="root"></div>
+
+    <!-- Script tag that loads our React application -->
+    <!-- type="module" enables ES6 modules and modern JavaScript features -->
+    <!-- src="/src/main.tsx" points to our TypeScript entry file -->
+    <!-- Vite will process and bundle this file along with our JSX components -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
