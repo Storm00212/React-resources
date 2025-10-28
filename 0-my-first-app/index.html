@@ -1,13 +1,41 @@
+<!-- index.html - The Single Page Application Entry Point
+
+This HTML file serves as the foundation for our React Single Page Application (SPA).
+In a typical React app, this is usually the only HTML file needed, as React
+handles all the dynamic content rendering.
+
+DOCTYPE declaration tells the browser this is an HTML5 document -->
 <!doctype html>
+
+<!-- The html element with lang attribute for accessibility and SEO -->
 <html lang="en">
   <head>
+    <!-- Character encoding: tells browser how to interpret text -->
     <meta charset="UTF-8" />
+
+    <!-- Favicon: small icon that appears in browser tab -->
+    <!-- type="image/svg+xml" indicates it's an SVG file -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Viewport meta tag: ensures proper rendering on mobile devices -->
+    <!-- width=device-width: matches screen width -->
+    <!-- initial-scale=1.0: prevents automatic zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title: appears in browser tab and search results -->
     <title>Vite + React + TS</title>
   </head>
+
   <body>
+    <!-- Root div: This is where React will mount our application -->
+    <!-- React will replace this empty div with our component tree -->
+    <!-- The id="root" is referenced in main.tsx -->
     <div id="root"></div>
+
+    <!-- Script tag: loads our main React application -->
+    <!-- type="module" enables ES6 modules -->
+    <!-- src="/src/main.tsx" points to our entry TypeScript file -->
+    <!-- Vite will process and bundle this file -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
