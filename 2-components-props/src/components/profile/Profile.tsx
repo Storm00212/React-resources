@@ -13,7 +13,7 @@ import './profile.css'
 // Define a TypeScript type for the component's props
 // This ensures type safety - the component will only accept objects with these exact properties
 // Using 'type' instead of 'interface' - both work, but 'type' is more flexible for unions
-type profiledetailes = {
+type profiledetails = {
     name: string;    // The person's name to display
     avatar: string;  // URL or path to the profile image
     bio: string      // Biographical text about the person
@@ -22,7 +22,7 @@ type profiledetailes = {
 // Define the Profile component using arrow function syntax with destructured props
 // The props are destructured directly in the function parameter: ({ name, avatar, bio })
 // This is equivalent to: (props: profiledetailes) => { const { name, avatar, bio } = props; ... }
-const Profile = ({ name, avatar, bio }: profiledetailes) => {
+const Profile = ({ name, avatar, bio }: profiledetails) => {
     // Return the JSX structure for a profile card
     return (
         // Main container div with CSS class for styling
